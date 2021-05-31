@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    margin-right: 1rem;
+}
+
+.navbar ul li a {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 25px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 3.5rem;
+}
+
+#home::before {
+    top: 0;
+    content: "";
+    position: absolute;
+    background: url('./images/background.jpg') no-repeat center center/cover;
+    height: 56rem;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.headings {
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.main {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+#about,
+#portfolio {
+    padding: 2rem 1rem;
+}
+
+.logo-pic {
+    display: flex;
+}
+
+.logo-pic img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
+}
+
+#intro {
+    padding: 1rem;
+}
+
+.work-summary {
+    padding: 1rem;
+}
+
+.client {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.client:nth-child(odd) {
+    flex-direction: row-reverse;
+}
